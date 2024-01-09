@@ -31,14 +31,14 @@ class Servico(Base):
         return self.servico
     
 class Cargo(Base):
-    cargo = models.CharField('Cago', max_length=100)
+    cargo = models.CharField('Cargo', max_length=100)
 
     class Meta:
         verbose_name = 'Cargo'
         verbose_name_plural = 'Cargos'
 
-        def __str__(self):
-            return self.cargo
+    def __str__(self):
+        return self.cargo
         
 
 class Funcionario(Base):
