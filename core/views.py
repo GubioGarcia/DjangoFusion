@@ -7,7 +7,7 @@ from .forms import ContatoForm
 
 class IndexView(FormView):
     template_name = 'index.html'
-    form_class= ContatoForm
+    form_class = ContatoForm
     success_url = reverse_lazy('index')
 
     def get_context_data(self, **kwargs):
